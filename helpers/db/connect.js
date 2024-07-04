@@ -71,7 +71,5 @@ export class connect {
         this.conexion = new MongoClient(`${this.getHost}${this.user}:${this.getPass}@${this.getCluster}:${this.port}`)
         await this.conexion.connect();
     }
-    async close(){
-        await this.conexion.close();
-    }
+    
 }
